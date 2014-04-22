@@ -8,11 +8,13 @@
 
 class Criterio implements ICompomentsCriterio {
 
+	private $filters[];
+	private $operators[];
+
 	const AND_OPERATOR = 'AND';
 	const OR_OPERATOR = 'OR';
 
-	public function __construct() {
-
+	public function __construct(Filter $f, $operator) {
 
 
 	}
@@ -20,7 +22,15 @@ class Criterio implements ICompomentsCriterio {
 	public function dump() {
 
 
+	}
+
+	public function addFilter() {
+
 
 	}
 
+	public function addRemove() {
+
+
+	}
 }
