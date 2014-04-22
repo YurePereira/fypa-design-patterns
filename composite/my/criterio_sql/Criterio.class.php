@@ -8,6 +8,9 @@
 
 class Criterio implements ICompomentsCriterio {
 
+	const AND_OPERATOR = 'AND';
+	const OR_OPERATOR = 'OR';
+
 	public function __construct() {
 
 
@@ -16,7 +19,7 @@ class Criterio implements ICompomentsCriterio {
 
 	public function dump() {
 
-		
+
 
 	}
 
