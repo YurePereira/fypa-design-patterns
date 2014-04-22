@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * 
+ * @author Francisco Yure Pereira de Araujo <franciscoyurep@gmail.com>
+ * @since 2014-04-21 
+ * 
+ */
 require_once 'IComponentMenu.class.php';
 require_once 'Menu.class.php';
 require_once 'SubMenu.class.php';
