@@ -8,13 +8,13 @@
 class Filter implements IComponentCriterio {
 
 	private $field;
-	private $operater;
+	private $operator;
 	private $value;
 
-	public function __construct( $field, $operater, $value ) {
+	public function __construct( $field, $operator, $value ) {
 
 		$this->field = $field;
-		$this->operater = $operater;
+		$this->operator = $operator;
 		$this->value = $value;
 
 	}
@@ -62,7 +62,7 @@ class Filter implements IComponentCriterio {
 
 	public function dump() {
 
-		$str = $this->field . ' ' . $this->operater . ' ';
+		$str = $this->field . ' ' . $this->operator . ' ';
 		$str .= $this->transform( $this->value );
 		return $str;
 
