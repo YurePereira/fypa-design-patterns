@@ -26,5 +26,3 @@ echo '<br />';
 echo $filter4->dump();
 echo '<br />';
 echo $filter5->dump();
-
-

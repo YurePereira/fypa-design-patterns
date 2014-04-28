@@ -22,7 +22,7 @@ class Filter implements IComponentCriterio {
 	private function transformByType( $value ) {
 		
 		$str = '';
-		if ( $this->is_field( $value ) ) {
+		if ( $this->isField( $value ) ) {
 			$str = utf8_decode( $value );				
 		} else if ( is_bool( $value ) ) {
 			$str = $value ? 'TRUE' : 'FALSE';
@@ -53,7 +53,7 @@ class Filter implements IComponentCriterio {
 
 	}
 
-	private function is_field( $value ) {
+	private function isField( $value ) {
 
 		$pattern = '/^´([a-zA-Z0-9_-])+´$/';
 		return preg_match($pattern, $value);
